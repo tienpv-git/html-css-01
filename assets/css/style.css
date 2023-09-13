@@ -5,6 +5,7 @@
 :root {
     --navbar-color: #4f5361;
     --main-color: #0f1b4c;
+    --page-size: calc(73rem + 6.6875rem + 10.31rem);
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 /* Common */
 .content {
-    width: calc(100vw - 10.31rem * 2);
+    width: calc(73rem + 6.6875rem - 10.31rem);
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,12 +24,11 @@ a {
 }
 
 .button {
-    padding: 0.56rem 1.37rem 0.62rem 1.44rem;
+    padding: 0.56rem 1.37rem 0.63rem 1.44rem;
+    text-align: center;
     min-width: 6.125rem;
-    height: 3.125rem;
     border-radius: 0.5rem;
     color: #fff;
-    border-color: transparent;
     background-color: var(--main-color);
     font-size: 0.875rem;
     font-style: normal;
@@ -36,7 +36,6 @@ a {
 }
 /* Header */
 .header {
-    position: relative;
     background-color: #e6f0ff;
     height: 100vh;
 }
@@ -44,6 +43,7 @@ a {
 .navbar {
     padding-top: 2.37rem;
     display: flex;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -58,10 +58,12 @@ a {
     margin-right: 1.75rem;
 }
 
+.navbar li {
+    margin-right: 1.75rem;
+}
+
 .navbar .login {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 23.06rem;
+    margin-left: auto;
 }
 
 .navbar ul a {
@@ -75,7 +77,11 @@ a {
     color: var(--main-color);
 }
 
-.hero {
+.end-page {
+    margin-top: 2.44rem;
+}
+
+.end-page .hero {
     margin-top: 8.13rem;
 }
 
@@ -123,6 +129,150 @@ a {
 
 .img-hero {
     position: absolute;
-    left: 53.06rem;
+    margin-left: 28.5rem;
     bottom: 0rem;
+}
+
+/* -------- Client ---------- */
+.client {
+    margin-top: 4.94rem;
+}
+
+.client .content {
+    margin-top: 2.69rem;
+    margin-bottom: 2.56rem;
+}
+
+.client .row-1 {
+    display: flex;
+    margin-bottom: 1.44rem;
+}
+
+.client .row-1 .logo {
+    max-width: 6.6875rem;
+    max-height: 1.5rem;
+}
+
+.client .row-1 .rate {
+    margin-left: auto;
+}
+
+.client .row-2 {
+    display: flex;
+    margin-bottom: 4.38rem;
+}
+
+.client .row-2 p {
+    display: inline-block;
+    color: #7d8589;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.client .row-2 p:first-child {
+    margin-right: 33.81rem;
+}
+
+.client .row-3 {
+    display: flex;
+}
+
+.client .row-3 .brand {
+    margin-right: 4.64rem;
+}
+
+/* --------- Guides --------- */
+.guide {
+    margin-top: 2.5rem;
+}
+
+.guide .content {
+    width: calc(var(--page-size) - 23.56rem - 23.62rem);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.94rem;
+    margin-bottom: 4.94rem;
+}
+
+.guide .content .retangle {
+    margin-bottom: 0.62rem;
+    background: #000339;
+}
+
+.guide .content .subtitle {
+    width: 16.8125rem;
+    color: #000339;
+    font-size: 2.1875rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.guide .content .desc {
+    width: 28.6875rem;
+    color: #5a6473;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.guide .content .guide-logo {
+    display: flex;
+    margin-top: 4.37rem;
+}
+
+.guide .content .guide-logo .logo:nth-child(2) {
+    margin-left: 14.25rem;
+    margin-right: 14.31rem;
+}
+
+.guide .content .guide-name {
+    display: flex;
+    margin-top: 1.63rem;
+    text-align: center;
+    color: #3b3c45;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.guide .content .guide-name p:nth-child(2) {
+    margin-left: 8.75rem;
+    margin-right: 8.75rem;
+}
+
+.guide .content .guide-how {
+    margin-top: 0.63rem;
+    display: flex;
+}
+
+.guide-how p {
+    color: #0689ff;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.guide .content .guide-how .container {
+    display: flex;
+    align-items: center;
+}
+
+.guide .content .guide-how .container:nth-child(2) {
+    margin-left: 10.25rem;
+    margin-right: 10.38rem;
+}
+
+.guide .content .set-guideline {
+    margin-top: 3.12rem;
+}
+.guide .content .button {
+    padding: 0.88rem 1.5rem 1rem 1.56rem;
+    text-align: center;
+    font-size: 0.8125rem;
+    font-weight: 500;
 }
